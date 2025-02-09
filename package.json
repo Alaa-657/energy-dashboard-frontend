@@ -12,6 +12,7 @@
     "react-router-dom": "^7.1.5",
     "react-scripts": "5.0.1",
     "react-toastify": "^11.0.3",
+    "serve": "^14.2.4",
     "web-vitals": "^4.2.4"
   },
   "scripts": {
@@ -19,6 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+	"serve": "serve -s build"
   },
   "eslintConfig": {
     "extends": [
