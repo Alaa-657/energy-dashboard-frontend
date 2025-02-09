@@ -99,7 +99,7 @@ function App() {
         ...prevState,
         [e.target.name]: e.target.value
     }));
-};
+	};
 
 
     // ✅ Handle Investment Submission
@@ -159,7 +159,7 @@ function App() {
 			headers: { Authorization: `Bearer ${token}` },
 			responseType: "blob"
 		})
-			then(response => {
+			.then(response => {
             const blob = new Blob([response.data], { type: "text/csv" });
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement("a");
